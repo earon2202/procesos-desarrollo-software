@@ -7,7 +7,7 @@ import sqlalchemy
 import pymysql
 
 def lambda_handler(event, context):
-    city = "Berlin"
+    city = "Canada"
     country = "DE"
     response = requests.get(f'http://api.openweathermap.org/data/2.5/forecast/?q={city},{country}&appid={OWM_key}&units=metric&lang=en')
     data = response.json()
